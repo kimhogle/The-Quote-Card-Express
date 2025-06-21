@@ -1,0 +1,54 @@
+/* Reset and font setup */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family:  MS Gothic, Arial, sans-serif;
+}
+
+/* Main layout container */
+.main {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: black;
+}
+
+
+
+/* Quote card layout */
+article.quote-container {
+  color: greenyellow;
+  background-image: url(../img/munsters.jpg);
+  background-size: contain;
+  text-align: center;
+  width: 80vw;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+  padding: 40px;
+  border: 5px solid rgba(6, 248, 47, 0.4);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+
+/* Main quote */
+.quote-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  display: block;
+}
+
+/* Author */
+.author-text {
+  font-size: 1.3rem;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
