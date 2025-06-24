@@ -13,15 +13,26 @@ body, html {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-color: black;
 }
 
+/* Background image */
+.background-img {
+  background-image: url(../img/munsters.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1; /* make sure it's behind your quote card */
+}
 
 
 /* Quote card layout */
 article.quote-container {
   color: greenyellow;
-  background-image: url(../img/munsters.jpg);
   background-size: contain;
   text-align: center;
   width: 80vw;
@@ -34,6 +45,7 @@ article.quote-container {
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
+  z-index: 1; /* ensure it's above the background image */;
 }
 
 
